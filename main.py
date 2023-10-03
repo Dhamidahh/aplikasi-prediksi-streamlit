@@ -80,18 +80,19 @@ if (selected == 'SEMESTER 1'):
 
         if SEMESTER_1_prediction[0] == 1:
             SEMESTER_1_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
-            MOTIVASI = Image.open('1_LTTW.jpg')
-                        st.image(img, use_column_width = True)
-                
+
+            img = Image.open('1_LTTW.jpg')
+            st.image(img, use_column_width=True)
         else:
             SEMESTER_1_PREDICTION = 'LULUS TEPAT WAKTU'
-            MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
-                'Kamu bisa mengambil lebih dari 20 sks untuk semester 2. Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting untuk memperhatikan pelajaran tentang kegagalan.')
 
-        pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
+            img = Image.open('1_LTW.jpg')
+            st.image(img, use_column_width=True)
 
-        st.success(pesan_hasil)
+        pesan_hasil = f'{SEMESTER_1_PREDICTION}'
+
+        # Menampilkan pesan hasil
+    st.success(pesan_hasil)
 
 if (selected == 'SEMESTER 2'):
 
