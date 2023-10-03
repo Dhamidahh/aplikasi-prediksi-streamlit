@@ -37,7 +37,7 @@ SEMESTER_7 = joblib.load('MODEL_SEMESTER7_RF.pkl')
 with st.sidebar:
     selected = option_menu('Prediksi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
                            ['SEMESTER 1', 'SEMESTER 2', 'SEMESTER 3', 'SEMESTER 4',
-                            'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7', 'SEMESTER 8'],
+                            'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
                            default_index=0)
 
 # Diabetes Prediction Page
@@ -81,13 +81,13 @@ if (selected == 'SEMESTER 1'):
         if SEMESTER_1_prediction[0] == 1:
             SEMESTER_1_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
 
-            img = Image.open('1_LTTW.jpg')
-            st.image(img, use_column_width=True)
+            img2 = Image.open('1_LTTW.jpg')
+            st.image(img2, use_column_width=True)
         else:
             SEMESTER_1_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
 
-            img = Image.open('1_LTW.jpg')
-            st.image(img, use_column_width=True)
+            img3 = Image.open('1_LTW.jpg')
+            st.image(img3, use_column_width=True)
 
         # Menampilkan pesan hasil
     st.success(SEMESTER_1_PREDICTION)
@@ -827,6 +827,7 @@ if (selected == 'SEMESTER 7'):
             MOTIVASI = (
                 'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir'
                 '"Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya"')
+            
 
         else:
             SEMESTER_7_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
@@ -835,5 +836,9 @@ if (selected == 'SEMESTER 7'):
                 'Akhir yang indah dengan gelar di belakang nama, siap menantimu!!')
 
         pesan_hasil = f'{SEMESTER_7_PREDICTION}, {MOTIVASI}'
-
         st.success(pesan_hasil)
+        
+        img4 = Image.open('OPSI LULUS.jpg')
+        st.image(img4, use_column_width=True)
+        
+        
