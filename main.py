@@ -79,18 +79,20 @@ if (selected == 'SEMESTER 1'):
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
 
         if SEMESTER_1_prediction[0] == 1:
-            SEMESTER_1_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
-
-            img2 = Image.open('1_LTTW.jpg')
-            st.image(img2, use_column_width=True)
+            SEMESTER_1_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
+            MOTIVASI = (
+                ' Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi. '
+                'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara merengkuh peluang bahkan ketika peluang itu tepat berada di hadapan kamu.')
         else:
-            SEMESTER_1_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
+            SEMESTER_1_PREDICTION = 'LULUS TEPAT WAKTU'
+            MOTIVASI = (
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
+                'Kamu bisa mengambil lebih dari 20 sks untuk semester 2. Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting untuk memperhatikan pelajaran tentang kegagalan.')
 
-            img3 = Image.open('1_LTW.jpg')
-            st.image(img3, use_column_width=True)
+        pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
 
-        # Menampilkan pesan hasil
-    st.success(SEMESTER_1_PREDICTION)
+        st.success(pesan_hasil)
+
 
 if (selected == 'SEMESTER 2'):
 
@@ -151,15 +153,15 @@ if (selected == 'SEMESTER 2'):
         if SEMESTER_2_prediction[0] == 0:
             SEMESTER_2_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Jangan patah semangat, terus perbaiki nilaimu.'
+                ' Jangan patah semangat, terus perbaiki nilaimu.'
                 'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara melihat peluang bahkan '
                 'ketika peluang itu tepat berada di hadapan kamu. '
                 'Bukan nasib yang menentukan hidupmu, tapi kamu sendirilah yang menentukan masa depanmu. '
-                'Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan')
+                'Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan'.)
         else:
             SEMESTER_2_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 3. Menjadi mahasiswa tidaklah mudah, namun semua bisa dilalui oleh mereka yang semangatnya yang tak akan goyah')
 
         pesan_hasil = f'{SEMESTER_2_PREDICTION}, {MOTIVASI}'
@@ -242,13 +244,13 @@ if (selected == 'SEMESTER 3'):
         if SEMESTER_3_prediction[0] == 0:
             SEMESTER_3_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Jangan patah semangat, terus perbaiki nilaimu.'
+                ' Jangan patah semangat, terus perbaiki nilaimu. '
                 'Jika tak ingin tertinggal dengan temanmu hilangkan rasa malas, '
                 'jadilah orang yang dikagumi karena kesuksesanmu nantinya bukan orang yang direndahkan')
         else:
             SEMESTER_3_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 4. "Jika kita terus melakukan apa yang kita lakukan, kita juga terus akan mendapatkan apa yang kita dapatkan"')
 
         pesan_hasil = f'{SEMESTER_3_PREDICTION}, {MOTIVASI}'
@@ -348,12 +350,12 @@ if (selected == 'SEMESTER 4'):
         if SEMESTER_4_prediction[0] == 0:
             SEMESTER_4_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Jangan patah semangat, terus perbaiki nilaimu.')
+                ' Jangan patah semangat, terus perbaiki nilaimu.')
 
         else:
             SEMESTER_4_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 5. '
                 'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikkuti teman!!')
 
@@ -474,13 +476,13 @@ if (selected == 'SEMESTER 5'):
         if SEMESTER_5_prediction[0] == 0:
             SEMESTER_5_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang'
+                ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
                 'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir')
 
         else:
             SEMESTER_5_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 6. '
                 'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikkuti teman!!')
 
@@ -646,15 +648,15 @@ if (selected == 'SEMESTER 6'):
         if SEMESTER_6_prediction[0] == 0:
             SEMESTER_6_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang'
-                'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir'
+                ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
+                'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir. '
                 '"Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya"')
 
         else:
             SEMESTER_6_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
-                'Pikirkan dengan matang, apa topik yang akan kamu teliti di skripsi '
+                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
+                'Pikirkan dengan matang, apa topik yang akan kamu teliti di skripsi. '
                 '"Jangan jadikan skripsi menjadi hantu di akhir semestermu."')
 
         pesan_hasil = f'{SEMESTER_6_PREDICTION}, {MOTIVASI}'
@@ -825,20 +827,20 @@ if (selected == 'SEMESTER 7'):
         if SEMESTER_7_prediction[0] == 1:
             SEMESTER_7_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir'
+                ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir.'
                 '"Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya"')
             
 
         else:
             SEMESTER_7_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
-                'Sudah hampir sedikit lagi selesai. Bukalah Laptop dan Kerjakan Skripsimu'
+                ' Sudah hampir sedikit lagi selesai. Bukalah Laptop dan Kerjakan Skripsimu.'
                 'Akhir yang indah dengan gelar di belakang nama, siap menantimu!!')
 
         pesan_hasil = f'{SEMESTER_7_PREDICTION}, {MOTIVASI}'
         st.success(pesan_hasil)
         
         img4 = Image.open('OPSI LULUS.jpg')
-        st.image(img4, use_column_width=True)
+        st.image(img2, use_column_width=True)
         
         
