@@ -37,7 +37,7 @@ SEMESTER_7 = joblib.load('MODEL_SEMESTER7_RF.pkl')
 with st.sidebar:
     selected = option_menu('Prediksi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
                            ['SEMESTER 1', 'SEMESTER 2', 'SEMESTER 3', 'SEMESTER 4',
-                                    'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
+                            'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7', 'SEMESTER 8'],
                            default_index=0)
 
 # Diabetes Prediction Page
@@ -80,9 +80,9 @@ if (selected == 'SEMESTER 1'):
 
         if SEMESTER_1_prediction[0] == 1:
             SEMESTER_1_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
-            MOTIVASI = (
-                'Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi.'
-                'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara merengkuh peluang bahkan ketika peluang itu tepat berada di hadapan kamu.')
+            MOTIVASI = Image.open('1_LTTW.jpg')
+                        st.image(img, use_column_width = True)
+                
         else:
             SEMESTER_1_PREDICTION = 'LULUS TEPAT WAKTU'
             MOTIVASI = (
