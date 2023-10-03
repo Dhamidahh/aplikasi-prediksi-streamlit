@@ -157,7 +157,7 @@ if (selected == 'SEMESTER 2'):
                 'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara melihat peluang bahkan '
                 'ketika peluang itu tepat berada di hadapan kamu. '
                 'Bukan nasib yang menentukan hidupmu, tapi kamu sendirilah yang menentukan masa depanmu. '
-                'Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan'.)
+                'Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan.')
         else:
             SEMESTER_2_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU'
             MOTIVASI = (
