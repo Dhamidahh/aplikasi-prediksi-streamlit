@@ -364,7 +364,7 @@ if (selected == 'SEMESTER 4'):
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 5. '
-                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikkuti teman!!')
+                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!')
 
         pesan_hasil = f'{SEMESTER_4_PREDICTION}, {MOTIVASI}'
 
@@ -492,7 +492,7 @@ if (selected == 'SEMESTER 5'):
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 6. '
-                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikkuti teman!!')
+                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!')
 
         pesan_hasil = f'{SEMESTER_5_PREDICTION}, {MOTIVASI}'
 
