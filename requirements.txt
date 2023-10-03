@@ -3,3 +3,4 @@ scikit-learn
 Pillow
 streamlit-option-menu
 joblib
+xgboost==1.5.1
