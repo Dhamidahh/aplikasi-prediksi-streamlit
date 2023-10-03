@@ -89,10 +89,8 @@ if (selected == 'SEMESTER 1'):
             img = Image.open('1_LTW.jpg')
             st.image(img, use_column_width=True)
 
-        pesan_hasil = f'{SEMESTER_1_PREDICTION}'
-
         # Menampilkan pesan hasil
-    st.success(pesan_hasil)
+    st.success(SEMESTER_1_PREDICTION)
 
 if (selected == 'SEMESTER 2'):
 
