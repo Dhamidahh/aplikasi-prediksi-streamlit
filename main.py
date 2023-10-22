@@ -84,7 +84,8 @@ if (selected == 'SEMESTER 1'):
                 ' Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi. '
                 'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara merengkuh peluang bahkan ketika peluang itu tepat berada di hadapan kamu.')
             img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True)        
+            st.image(img3, use_column_width=True)
+
         else:
             SEMESTER_1_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
             MOTIVASI = (
@@ -94,6 +95,9 @@ if (selected == 'SEMESTER 1'):
         pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img4 = Image.open('MKP_SEM2.jpg')
+        st.image(img4, use_column_width=True)
 
 if (selected == 'SEMESTER 2'):
 
@@ -170,6 +174,9 @@ if (selected == 'SEMESTER 2'):
         pesan_hasil = f'{SEMESTER_2_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img5 = Image.open('MKP_SEM3..jpg')
+        st.image(img5, use_column_width=True)
 
 if (selected == 'SEMESTER 3'):
 
@@ -261,6 +268,9 @@ if (selected == 'SEMESTER 3'):
         pesan_hasil = f'{SEMESTER_3_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img6 = Image.open('MKP_SEM4..jpg')
+        st.image(img6, use_column_width=True)
 
 if (selected == 'SEMESTER 4'):
 
@@ -369,6 +379,9 @@ if (selected == 'SEMESTER 4'):
         pesan_hasil = f'{SEMESTER_4_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img7 = Image.open('MKP_SEM5.jpg')
+        st.image(img7, use_column_width=True)
 
 if (selected == 'SEMESTER 5'):
 
@@ -497,6 +510,9 @@ if (selected == 'SEMESTER 5'):
         pesan_hasil = f'{SEMESTER_5_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img8 = Image.open('MKP_SEM6.jpg')
+        st.image(img8, use_column_width=True)
 
 if (selected == 'SEMESTER 6'):
 
@@ -672,6 +688,9 @@ if (selected == 'SEMESTER 6'):
         pesan_hasil = f'{SEMESTER_6_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img9 = Image.open('MKP_SEM7.jpg')
+        st.image(img9, use_column_width=True)
 
 if (selected == 'SEMESTER 7'):
 
